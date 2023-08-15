@@ -99,6 +99,10 @@ namespace Akka.Benchmarks.Actor
                     {
                         replyTo.Tell(TestDone.Instance);
                     }
+                    if (count == 0)
+                    {
+                        replyTo.Tell(TestDone.Instance);
+                    }
                 });
             }
         }
