@@ -626,7 +626,7 @@ namespace Akka.Actor
         /// <returns>TBD</returns>
         public IActorState ClearBehaviorStack()
         {
-            _behaviorStack = new Stack<Receive>(1);
+            _behaviorStack = new Stack<Receive>(2);
             return this;
         }
 
